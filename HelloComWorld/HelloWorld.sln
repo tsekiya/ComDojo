@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DojoGreeting", "DojoGreeting\DojoGreeting.vcxproj", "{4AD56375-2947-48A0-BFB9-9BE5AC657EB4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DojoGreetingPS", "DojoGreeting\DojoGreetingPS.vcxproj", "{78A4ADB2-4FB0-4B6B-8D60-2EC475167D2C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4} = {4AD56375-2947-48A0-BFB9-9BE5AC657EB4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorld", "HelloWorld\HelloWorld.vcxproj", "{F86FA0CB-5A73-4A86-8A83-197AC3209C83}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4} = {4AD56375-2947-48A0-BFB9-9BE5AC657EB4}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{3DA8D1FD-E3BD-4340-ADC4-03E7DFD5FA79}"
+	ProjectSection(SolutionItems) = preProject
+		HelloWorld.vbs = HelloWorld.vbs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4}.Debug|x64.ActiveCfg = Debug|x64
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4}.Debug|x64.Build.0 = Debug|x64
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4}.Debug|x86.ActiveCfg = Debug|Win32
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4}.Debug|x86.Build.0 = Debug|Win32
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4}.Release|x64.ActiveCfg = Release|x64
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4}.Release|x64.Build.0 = Release|x64
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4}.Release|x86.ActiveCfg = Release|Win32
+		{4AD56375-2947-48A0-BFB9-9BE5AC657EB4}.Release|x86.Build.0 = Release|Win32
+		{78A4ADB2-4FB0-4B6B-8D60-2EC475167D2C}.Debug|x64.ActiveCfg = Debug|x64
+		{78A4ADB2-4FB0-4B6B-8D60-2EC475167D2C}.Debug|x86.ActiveCfg = Debug|Win32
+		{78A4ADB2-4FB0-4B6B-8D60-2EC475167D2C}.Release|x64.ActiveCfg = Release|x64
+		{78A4ADB2-4FB0-4B6B-8D60-2EC475167D2C}.Release|x86.ActiveCfg = Release|Win32
+		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Debug|x64.ActiveCfg = Debug|x64
+		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Debug|x64.Build.0 = Debug|x64
+		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Debug|x86.ActiveCfg = Debug|Win32
+		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Debug|x86.Build.0 = Debug|Win32
+		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Release|x64.ActiveCfg = Release|x64
+		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Release|x64.Build.0 = Release|x64
+		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Release|x86.ActiveCfg = Release|Win32
+		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
