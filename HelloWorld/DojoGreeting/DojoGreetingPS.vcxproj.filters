@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{b227b1d0-d7e0-4920-afc3-a8cd5e7abb80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="生成されたファイル">
+      <UniqueIdentifier>{94509fb9-1386-4d56-8d0e-886474775f62}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DojoGreetingps.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DojoGreeting_i.c">
+      <Filter>生成されたファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DojoGreeting_p.c">
+      <Filter>生成されたファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="dlldata.c">
+      <Filter>生成されたファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
