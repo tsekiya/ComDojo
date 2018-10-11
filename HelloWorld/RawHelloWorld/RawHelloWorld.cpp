@@ -15,16 +15,16 @@ int main()
 		IDispatch *pDisp = nullptr;
 		IGreeting *pGreeting = nullptr;
 		
-		// AddRef/ReleaseRefのルール2
+		// AddRef/Releaseのルール2
 		if (SUCCEEDED(::CoCreateInstance(CLSID_Greeting, nullptr, CLSCTX_ALL, IID_IUnknown, (void**)&pUnk)) &&
 			nullptr != pUnk)
 		{
 			pUnk2 = pUnk;
 
-			// AddRef/ReleaseRefのルール1
+			// AddRef/Releaseのルール1
 			pUnk2->AddRef();
 			
-			// AddRef/ReleaseRefのルール2
+			// AddRef/Releaseのルール2
 			if (SUCCEEDED(pUnk2->QueryInterface(IID_IDispatch, (void**)&pDisp)) && nullptr != pDisp)
 			{
 				// AddRef/ReleaseRefのルール2
@@ -43,14 +43,19 @@ int main()
 
 						::WriteFile(hStdOut, (PCSTR)szHello, szHello.GetLength(), nullptr, nullptr);
 					}
+					// AddRef/Releaseのルール6
 					pGreeting->Release();
 					pGreeting = nullptr;
 				}
+				// AddRef/Releaseのルール6
 				pDisp->Release();
 				pDisp = nullptr;
 			}
+			// AddRef/Releaseのルール6
 			pUnk2->Release();
 			pUnk2 = nullptr;
+
+			// AddRef/Releaseのルール6
 			pUnk->Release();
 			pUnk = nullptr;
 		}
