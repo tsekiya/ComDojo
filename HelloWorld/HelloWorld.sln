@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{3DA8D1
 		HelloWorld.vbs = HelloWorld.vbs
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RawHelloWorld", "RawHelloWorld\RawHelloWorld.vcxproj", "{BCC8C004-DF78-43A3-898F-B353587CC7E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -48,6 +50,14 @@ Global
 		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Release|x64.Build.0 = Release|x64
 		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Release|x86.ActiveCfg = Release|Win32
 		{F86FA0CB-5A73-4A86-8A83-197AC3209C83}.Release|x86.Build.0 = Release|Win32
+		{BCC8C004-DF78-43A3-898F-B353587CC7E2}.Debug|x64.ActiveCfg = Debug|x64
+		{BCC8C004-DF78-43A3-898F-B353587CC7E2}.Debug|x64.Build.0 = Debug|x64
+		{BCC8C004-DF78-43A3-898F-B353587CC7E2}.Debug|x86.ActiveCfg = Debug|Win32
+		{BCC8C004-DF78-43A3-898F-B353587CC7E2}.Debug|x86.Build.0 = Debug|Win32
+		{BCC8C004-DF78-43A3-898F-B353587CC7E2}.Release|x64.ActiveCfg = Release|x64
+		{BCC8C004-DF78-43A3-898F-B353587CC7E2}.Release|x64.Build.0 = Release|x64
+		{BCC8C004-DF78-43A3-898F-B353587CC7E2}.Release|x86.ActiveCfg = Release|Win32
+		{BCC8C004-DF78-43A3-898F-B353587CC7E2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
