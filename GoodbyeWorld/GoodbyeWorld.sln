@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DojoGreeting2", "DojoGreeting2\DojoGreeting2.vcxproj", "{98242210-C05B-4F56-833B-01807CBCBCDA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DojoGreeting2PS", "DojoGreeting2\DojoGreeting2PS.vcxproj", "{3AA3B862-FB36-4D15-9ED7-910534DE0528}"
+	ProjectSection(ProjectDependencies) = postProject
+		{98242210-C05B-4F56-833B-01807CBCBCDA} = {98242210-C05B-4F56-833B-01807CBCBCDA}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DojoGreeting", "DojoGreeting", "{6C11910C-0318-40E2-9D9A-ACCD5BA5E467}"
+	ProjectSection(SolutionItems) = preProject
+		DojoGreeting\DojoGreeting.h = DojoGreeting\DojoGreeting.h
+		DojoGreeting\DojoGreeting.IDL = DojoGreeting\DojoGreeting.IDL
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{0720EA74-2816-4721-AE6D-6FC2BC725FED}"
+	ProjectSection(SolutionItems) = preProject
+		Script\GoodbyeWorld.vbs = Script\GoodbyeWorld.vbs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98242210-C05B-4F56-833B-01807CBCBCDA}.Debug|x64.ActiveCfg = Debug|x64
+		{98242210-C05B-4F56-833B-01807CBCBCDA}.Debug|x64.Build.0 = Debug|x64
+		{98242210-C05B-4F56-833B-01807CBCBCDA}.Debug|x86.ActiveCfg = Debug|Win32
+		{98242210-C05B-4F56-833B-01807CBCBCDA}.Debug|x86.Build.0 = Debug|Win32
+		{98242210-C05B-4F56-833B-01807CBCBCDA}.Release|x64.ActiveCfg = Release|x64
+		{98242210-C05B-4F56-833B-01807CBCBCDA}.Release|x64.Build.0 = Release|x64
+		{98242210-C05B-4F56-833B-01807CBCBCDA}.Release|x86.ActiveCfg = Release|Win32
+		{98242210-C05B-4F56-833B-01807CBCBCDA}.Release|x86.Build.0 = Release|Win32
+		{3AA3B862-FB36-4D15-9ED7-910534DE0528}.Debug|x64.ActiveCfg = Debug|x64
+		{3AA3B862-FB36-4D15-9ED7-910534DE0528}.Debug|x86.ActiveCfg = Debug|Win32
+		{3AA3B862-FB36-4D15-9ED7-910534DE0528}.Release|x64.ActiveCfg = Release|x64
+		{3AA3B862-FB36-4D15-9ED7-910534DE0528}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

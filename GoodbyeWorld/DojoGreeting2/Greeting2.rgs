@@ -1,0 +1,26 @@
+HKCR
+{
+	ComDojo.Greeting.2 = s 'Greeting2 Class'
+	{
+		CLSID = s '{E1EDA4EB-71C7-4CAC-9379-5BAB627753C1}'
+	}
+	ComDojo.Greeting = s 'Greeting2 Class'
+	{		
+		CurVer = s 'ComDojo.Greeting.2'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E1EDA4EB-71C7-4CAC-9379-5BAB627753C1} = s 'Greeting2 Class'
+		{
+			ProgID = s 'ComDojo.Greeting.2'
+			VersionIndependentProgID = s 'ComDojo.Greeting'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{9FC8DCBC-F451-4936-82D0-A04E7AC770DD}'
+			Version = s '1.1'
+		}
+	}
+}
