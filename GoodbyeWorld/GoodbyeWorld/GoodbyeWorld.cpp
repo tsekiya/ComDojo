@@ -19,10 +19,10 @@ int main()
 
 	int result = S_OK;
 
+	ComInitializer comInitializer(COINIT_APARTMENTTHREADED);
+
 	try
 	{
-		ComInitializer comInitializer(COINIT_APARTMENTTHREADED);
-
 		IGreeting2Ptr pGreeting2;
 		
 		result = pGreeting2.CreateInstance(__uuidof(Greeting2));
