@@ -19,6 +19,8 @@
 
 #define ATL_NO_ASSERT_ON_DESTROY_NONEXISTENT_WINDOW
 
+#define _ATL_DEBUG_INTERFACES
+
 #include "resource.h"
 #include <atlbase.h>
 #include <atlcom.h>
