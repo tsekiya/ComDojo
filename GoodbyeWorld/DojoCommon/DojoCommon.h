@@ -9,7 +9,7 @@
 
 namespace ComDojo
 {
-	// COMサブチャンネルのRAIIクラス
+	// COMサブシステムのRAIIクラス
 	class DOJO_API ComInitializer
 	{
 	public:
