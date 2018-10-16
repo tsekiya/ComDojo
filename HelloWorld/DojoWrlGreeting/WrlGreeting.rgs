@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {0C89DB68-0FCE-47DC-A5ED-45C9070F3E8D} = s 'WRL Greeting Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{664C28E6-FA5E-4572-816A-DBD8F6C0FF41}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,33 @@
+// DojoWrlGreeting.idl : DojoWrlGreeting の IDL ソース
+//
+
+// このファイルは、タイプ ライブラリ (DojoWrlGreeting.tlb) およびマーシャリング コードを
+// 作成するために MIDL ツールによって処理されます。
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "hstring.idl";
+
+[object, uuid(841279D6-8443-4FA5-947A-4A305165CCDE), pointer_default(unique)]
+interface IWrlGreeting : IUnknown
+{
+	//HRESULT SayHello([out, retval] BSTR*);
+	HRESULT SayHello([out, retval] HSTRING*);
+};
+
+[
+	uuid(664C28E6-FA5E-4572-816A-DBD8F6C0FF41),
+	version(1.0),
+	helpstring("ComDojo Greeting Library WRL Edition")
+]
+library DojoWrlGreetingLib
+{
+	importlib("stdole2.tlb");
+	[uuid(0C89DB68-0FCE-47DC-A5ED-45C9070F3E8D)]
+	coclass WrlGreeting
+	{
+		[default] interface IWrlGreeting;
+	};
+};
+
+
