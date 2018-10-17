@@ -11,7 +11,6 @@ import "hstring.idl";
 [object, uuid(841279D6-8443-4FA5-947A-4A305165CCDE), pointer_default(unique)]
 interface IWrlGreeting : IUnknown
 {
-	//HRESULT SayHello([out, retval] BSTR*);
 	HRESULT SayHello([out, retval] HSTRING*);
 };
 
