@@ -10,8 +10,6 @@
 
 #include "targetver.h"
 
-#define _ATL_DEBUG_INTERFACES
-
 #include "resource.h"
 #include <atlbase.h>
 #include <atlcom.h>
