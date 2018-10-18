@@ -5,7 +5,6 @@
 
 #define IDS_PROJNAME                    100
 #define IDR_DOJOWRLGREETING				101
-#define IDR_WRLGREETING					102
 // 新しいオブジェクトの次の既定値
 //
 #ifdef APSTUDIO_INVOKED

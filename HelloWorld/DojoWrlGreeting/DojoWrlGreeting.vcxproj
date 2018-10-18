@@ -271,7 +271,6 @@
   <ItemGroup>
     <None Include="DojoWrlGreeting.def" />
     <None Include="DojoWrlGreeting.rgs" />
-    <None Include="WrlGreeting.rgs" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="DojoWrlGreeting.idl" />

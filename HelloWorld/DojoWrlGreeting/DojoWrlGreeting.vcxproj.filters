@@ -70,9 +70,6 @@
     <None Include="DojoWrlGreeting.def">
       <Filter>ソース ファイル</Filter>
     </None>
-    <None Include="WrlGreeting.rgs">
-      <Filter>リソース ファイル</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="DojoWrlGreeting.idl">
