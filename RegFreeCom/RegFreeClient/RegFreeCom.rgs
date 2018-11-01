@@ -1,0 +1,26 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {BDDB5854-7D43-4AFA-A283-1BA00B5B951C} = s 'Foo Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EBDC1200-F062-4BBE-9B12-A3C2D80D2C8C}'
+			Version = s '1.0'
+		}
+		ForceRemove {96055C32-2967-4C89-989C-BA099F1AD282} = s 'Bar Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EBDC1200-F062-4BBE-9B12-A3C2D80D2C8C}'
+			Version = s '1.0'
+		}
+	}
+}

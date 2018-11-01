@@ -1,0 +1,30 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "hstring.idl";
+
+[object, uuid(4416CC51-9E6F-4314-8574-AAD6210005DE), pointer_default(unique)]
+interface IFoo : IUnknown
+{
+	HRESULT SayHello(HSTRING*);
+};
+
+[object, uuid(985D91D2-D68C-4EBC-B526-9160E5829C9B), pointer_default(unique)]
+interface IBar : IUnknown
+{
+	HRESULT SayHello(HSTRING*);
+};
+
+[uuid(EBDC1200-F062-4BBE-9B12-A3C2D80D2C8C),version(1.0)]
+library RegFreeComLib
+{
+	[uuid(BDDB5854-7D43-4AFA-A283-1BA00B5B951C)]
+	coclass Foo
+	{
+		[default] interface IFoo;
+	};
+	[uuid(96055C32-2967-4C89-989C-BA099F1AD282)]
+	coclass Bar
+	{
+		[default] interface IBar;
+	};
+};
