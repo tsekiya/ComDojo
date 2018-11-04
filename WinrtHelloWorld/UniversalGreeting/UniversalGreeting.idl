@@ -1,0 +1,28 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "hstring.idl";
+[
+	object,
+	uuid(2CEAE5F4-2AE3-4676-9C84-384B51208727),
+	nonextensible,
+	pointer_default(unique)
+]
+interface IGreeting : IUnknown
+{
+	HRESULT SayHello([out, retval]HSTRING* message);
+};
+[
+	uuid(634987AE-795A-4447-8A30-F7906A80BBA5),
+	version(1.0), helpstring("Comdojo Greeting Library C++/WinRT Edition")
+]
+library UniversalGreetingLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(4369B9BC-0F4E-4645-9E83-0B3B18B47DE2)
+	]
+	coclass Greeting
+	{
+		[default] interface IGreeting;
+	};
+};
