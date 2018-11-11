@@ -1,0 +1,15 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {ecb6161a-bd68-4656-8e80-01fe1622cef3} = s 'Fahrenheit class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{3e8841c6-a18d-4933-a21a-cbad94cefeea}'
+			Version = s '1.0'
+		}
+	}
+}

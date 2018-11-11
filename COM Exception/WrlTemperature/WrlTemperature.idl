@@ -1,0 +1,56 @@
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	object,
+	uuid(36C5F9BA-6182-44DB-899A-C79B809DE192),
+	nonextensible,
+	pointer_default(unique)
+]
+interface IFahrenheit : IUnknown
+{
+	HRESULT ToCelsius([in] double fahrenheit, [out, retval] double* celsius);
+	HRESULT FromCelsius([in] double celsius, [out, retval] double* fahrenheit);
+};
+[
+	object,
+	uuid(1771FF04-6AAF-44C6-A2AE-45D06DA9DD10),
+	nonextensible,
+	pointer_default(unique)
+]
+interface IComDojoErrorInfo : IErrorInfo
+{
+	HRESULT GetErrorCode([out, retval]long*);
+};
+[
+	object,
+	uuid(FFE5B8B2-A5F4-4CFC-99C8-044A1C990760),
+	nonextensible,
+	pointer_default(unique)
+]
+interface ICreateComDojoErrorInfo : ICreateErrorInfo
+{
+	HRESULT SetErrorCode([in] long);
+};
+[
+	uuid(4BF39842-A717-404F-8F32-CE8FF0200000),
+	version(1.0), helpstring("ComDojo Temperature Library WRL Edition")
+]
+library WrtTemperatureLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(492D5FF2-C462-48FD-BE9C-8E689BFDE16C)
+	]
+	coclass Fahrenheit
+	{
+		[default] interface IFahrenheit;
+	};
+	[
+		uuid(6EC85C19-CB1D-45D8-BF04-2F3A9667AE29)
+	]
+	coclass ComDojoErrorInfo
+	{
+		[default] interface IComDojoErrorInfo;
+		interface ICreateComDojoErrorInfo;
+	};
+};

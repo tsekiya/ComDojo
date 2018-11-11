@@ -1,0 +1,15 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {b38a677d-6b4e-4569-8691-039f9c7e33d1} = s 'ComDojoErrorInfo class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{3e8841c6-a18d-4933-a21a-cbad94cefeea}'
+			Version = s '1.0'
+		}
+	}
+}
